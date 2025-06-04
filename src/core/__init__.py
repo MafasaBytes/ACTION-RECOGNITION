@@ -1,0 +1,1 @@
+# Core package for centralized system components 
