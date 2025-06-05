@@ -1,4 +1,4 @@
-# Enhanced Computer Vision Anomaly Detection System
+# PROJECT Computer Vision Anomaly Detection System
 
 A comprehensive real-time computer vision system for anomaly detection in video streams, featuring object detection, multi-object tracking, action recognition, and intelligent warning systems.
 
