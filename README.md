@@ -41,7 +41,7 @@ Video Input → Object Detection → Multi-Object Tracking → Action Recognitio
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.9+
 - CUDA-compatible GPU (recommended)
 - 8GB+ RAM
 - Windows 10/11
