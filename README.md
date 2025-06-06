@@ -50,7 +50,7 @@ Video Input → Object Detection → Multi-Object Tracking → Action Recognitio
 
 1. **Clone the repository**
    ```bash
-   git clone [repository-url]
+   git clone git@github.com:MafasaBytes/ACTION-RECOGNITION.git
    cd PROJECT-COMPUTER-VISION
    ```
 
