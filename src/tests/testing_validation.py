@@ -641,9 +641,9 @@ Performance Metrics:
 • CPU Usage: {self.results['resources']['avg_cpu']:.1f}% avg
 
 Report Validation:
-✅ All performance claims validated
-✅ Real-time processing confirmed
-✅ Resource efficiency verified
+[OK] All performance claims validated
+[OK] Real-time processing confirmed
+[OK] Resource efficiency verified
         """
         
         axes[1,2].text(0.05, 0.95, summary_text, transform=axes[1,2].transAxes, 
@@ -653,12 +653,11 @@ Report Validation:
         axes[1,2].set_ylim(0, 1)
         axes[1,2].axis('off')
         
-        # Fix overlapping headings by adjusting layout with proper spacing for suptitle
         plt.tight_layout(rect=[0, 0.03, 1, 0.95])  # Leave space for suptitle at top and bottom
         plt.savefig('testing_validation_results.png', dpi=300, bbox_inches='tight')
         plt.show()
         
-        print("   ✅ Visualization saved to 'testing_validation_results.png'")
+        print("  [OK] Visualization saved to 'testing_validation_results.png'")
     
     def save_results(self):
         """Save test results to JSON file"""
@@ -679,11 +678,11 @@ Report Validation:
         with open('testing_validation_results.json', 'w') as f:
             json.dump(test_results_summary, f, indent=2, default=str)
         
-        print("   ✅ Results saved to 'testing_validation_results.json'")
+        print("[OK] Results saved to 'testing_validation_results.json'")
 
 def main():
     """Main testing function"""
-    print("\n🚀 Starting Comprehensive System Testing...")
+    print("\nStarting Comprehensive System Testing...")
     
     # Initialize tester
     tester = PerformanceTester()
@@ -692,10 +691,10 @@ def main():
     components_initialized = tester.initialize_components()
     
     if not components_initialized:
-        print("\n⚠️ Running in simulation mode - results will be representative")
+        print("\nRunning in simulation mode - results will be representative")
     
     print("\n" + "="*60)
-    print("🧪 RUNNING COMPONENT TESTS")
+    print("RUNNING COMPONENT TESTS")
     print("="*60)
     
     # Run all tests
@@ -707,7 +706,7 @@ def main():
     tester.monitor_system_resources(20)  # 20 seconds monitoring
     
     print("\n" + "="*60)
-    print("📊 GENERATING VALIDATION REPORT")
+    print("GENERATING VALIDATION REPORT")
     print("="*60)
     
     # Generate validation report
@@ -720,12 +719,12 @@ def main():
     tester.save_results()
     
     print("\n" + "="*60)
-    print("✅ TESTING VALIDATION COMPLETE!")
+    print("TESTING VALIDATION COMPLETE!")
     print("="*60)
-    print("\n📄 Generated Files:")
+    print("\nGenerated Files:")
     print("   • testing_validation_results.png - Main visualization")
     print("   • testing_validation_results.json - Raw test data")
-    print("\n📋 For Academic Report:")
+    print("\nFor Academic Report:")
     print("   • Use the generated visualization in your appendix")
     print("   • Reference the performance tables generated above")
     print("   • Include this script as evidence of testing methodology")
