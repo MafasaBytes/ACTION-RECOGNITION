@@ -1,4 +1,4 @@
-# Behavioural Anomaly Detection System
+# AI-Driven Threat Detection & Behavioral Anomaly System
 
 A comprehensive real-time computer vision system for anomaly detection in video streams, featuring object detection, multi-object tracking, action recognition, and intelligent warning systems.
 
